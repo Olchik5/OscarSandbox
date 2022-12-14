@@ -34,6 +34,9 @@ public class LoginOrRegisterPage extends BasePage{
     @FindBy (xpath = "//div[@class='alert alert-danger'][2]")
     WebElement warningResult;
 
+    @FindBy(css = ".error-block")
+    WebElement warningEmailResult;
+
     public HomePage register(String emailAddress, String password, String confirmPassword) {
         type(idRegistrationEmail, emailAddress);
         type(idRegistrationPassword1, password);
@@ -59,4 +62,9 @@ public class LoginOrRegisterPage extends BasePage{
     public String getWarningResult() {
         return warningResult.getText();
     }
+
+    public String getWarningText() {
+        return warningEmailResult.getText();
+    }
 }
+
