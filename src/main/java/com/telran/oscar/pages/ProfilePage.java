@@ -23,6 +23,14 @@ public class ProfilePage extends BasePage{
     @FindBy(css = ".btn-danger")
     WebElement deleteButton;
 
+    public ProfilePage deleteRegisterUsers(String password) {
+        new ProfilePage(driver).clickOnAccountLink()
+                .clickOnDeleteProfileButton()
+                .fillInPasswordField(password)
+                .clickOnDeleteButton();
+        return this;
+    }
+
     public ProfilePage deleteRegisterUser() {
         new ProfilePage(driver).clickOnAccountLink()
                 .clickOnDeleteProfileButton()
@@ -40,7 +48,10 @@ public class ProfilePage extends BasePage{
         type(passwordField, UserData.USER_REG_PASSWORD);
         return this;
     }
-
+    public ProfilePage fillInPasswordField(String password) {
+        type(passwordField, password);
+        return this;
+    }
     public ProfilePage clickOnDeleteProfileButton() {
         click(deleteProfile);
         return this;

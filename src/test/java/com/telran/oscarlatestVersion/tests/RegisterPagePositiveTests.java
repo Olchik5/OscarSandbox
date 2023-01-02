@@ -21,20 +21,16 @@ public class RegisterPagePositiveTests extends BaseTest{
     public void registerPositiveTest() {
         new LoginOrRegisterPage(driver).register(UserData.USER_REG_EMAIL, UserData.USER_REG_PASSWORD,
                 UserData.USER_REG_CONFIRM_PASSWORD);
+        new ProfilePage(driver).deleteRegisterUser();
         new HomePage(driver).verifyTextThanksForRegistering(ConfirmationData.CONFIRMATION_OF_REGISTER);
     }
 
     @Test(dataProviderClass = DataProviders.class, dataProvider = "posRegister")
     public void registerPositiveWithDataProviderTest(String email, String password, String confirmPassword) {
-        new LoginOrRegisterPage(driver)
-                .register(email, password, confirmPassword);
+        new LoginOrRegisterPage(driver).register(email, password, confirmPassword);
+        new ProfilePage(driver).deleteRegisterUsers(password);
         new HomePage(driver).verifyTextThanksForRegistering(ConfirmationData.CONFIRMATION_OF_REGISTER);
 
-    }
-
-    @AfterMethod(enabled = false)
-    public void postCondition() {
-        new ProfilePage(driver).deleteRegisterUser();
     }
 
 }
