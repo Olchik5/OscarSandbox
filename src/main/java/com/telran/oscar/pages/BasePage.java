@@ -10,6 +10,7 @@ import ru.yandex.qatools.ashot.shooting.ShootingStrategies;
 import javax.imageio.ImageIO;
 import java.io.File;
 import java.io.IOException;
+import java.util.List;
 
 public class  BasePage {
 
@@ -44,5 +45,9 @@ public class  BasePage {
             e.printStackTrace();
         }
         return screen;
+    }
+
+    public boolean isElementPresent(List<WebElement> element) {
+        return element.size() > 0;
     }
 }
