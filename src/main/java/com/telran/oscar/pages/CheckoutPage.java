@@ -77,4 +77,11 @@ public class CheckoutPage extends BasePage {
         click(placeOrderButton);
         return this;
     }
+
+    @FindBy(css = ".sub-header:nth-child(2)")
+    WebElement shippingHeader;
+
+    public String getShippingAddressText() {
+        return shippingHeader.getText();
+    }
 }

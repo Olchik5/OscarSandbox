@@ -9,4 +9,6 @@ public class ConfirmationData {
     public static final String CONFIRMATION_ADDED_TO_BASKET = "added to your basket";
     public static final String CONFIRMATION_BENEFIT = "Deferred benefit offer";
     public static final String CONFIRMATION_OF_REVIEW = "Thank you for reviewing";
+
+    public static final String CONFIRM_OF_EMPTY_BASKET = "Your basket is empty.";
 }

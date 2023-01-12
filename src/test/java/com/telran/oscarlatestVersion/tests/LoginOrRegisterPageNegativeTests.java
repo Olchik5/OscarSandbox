@@ -1,5 +1,6 @@
 package com.telran.oscarlatestVersion.tests;
 
+import com.telran.oscar.data.PageTitleData;
 import com.telran.oscar.data.UserData;
 import com.telran.oscar.data.WarningData;
 import com.telran.oscar.pages.HomePage;
@@ -34,12 +35,14 @@ public class LoginOrRegisterPageNegativeTests extends BaseTest {
     public void registerWithInvalidPasswordNegativeDataProviderTest(String email, String password, String confirmPassword) {
         new LoginOrRegisterPage(driver)
                 .register(email, password, confirmPassword);
+        Assert.assertTrue(new LoginOrRegisterPage(driver).getText().contains(PageTitleData.LOGIN_OR_REGISTER));
     }
 
     @Test(dataProviderClass = DataProviders.class, dataProvider = "negEmailRegister")
     public void registerWithInvalidEmailNegativeDataProviderTest(String email, String password, String confirmPassword) {
         new LoginOrRegisterPage(driver)
                 .register(email, password, confirmPassword);
+        Assert.assertTrue(new LoginOrRegisterPage(driver).getText().contains(PageTitleData.LOGIN_OR_REGISTER));
     }
 
 }

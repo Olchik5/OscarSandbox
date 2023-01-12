@@ -4,6 +4,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import java.util.Collection;
+
 public class LoginOrRegisterPage extends BasePage{
     
     public LoginOrRegisterPage(WebDriver driver) {
@@ -37,6 +39,9 @@ public class LoginOrRegisterPage extends BasePage{
     @FindBy(css = ".error-block")
     WebElement warningEmailResult;
 
+    @FindBy(css = ".breadcrumb-item.active")
+    WebElement invalidRegister;
+
     public HomePage register(String emailAddress, String password, String confirmPassword) {
         type(idRegistrationEmail, emailAddress);
         type(idRegistrationPassword1, password);
@@ -65,6 +70,10 @@ public class LoginOrRegisterPage extends BasePage{
 
     public String getWarningText() {
         return warningEmailResult.getText();
+    }
+
+    public String getText() {
+        return invalidRegister.getText();
     }
 }
 
