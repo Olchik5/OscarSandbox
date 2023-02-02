@@ -9,6 +9,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class LoginPagePositiveTests extends BaseTest{
+
     @BeforeMethod
     public void ensurePreconditions() {
         new HomePage(driver).clickOnLoginOrRegisterLink();

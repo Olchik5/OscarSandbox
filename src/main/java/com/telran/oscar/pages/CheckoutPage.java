@@ -8,19 +8,8 @@ import org.openqa.selenium.support.FindBy;
 
 public class CheckoutPage extends BasePage {
 
-    public CheckoutPage(WebDriver driver) {
-        super(driver);
-    }
-
-
     @FindBy(xpath = "//a[@href='/en-gb/checkout/']")
     WebElement proceedToCheckout;
-
-    public CheckoutPage clickOnProceedToCheckout() {
-        click(proceedToCheckout);
-        return new CheckoutPage(driver);
-    }
-
 
     @FindBy (id = "id_first_name")
     WebElement firstName;
@@ -43,6 +32,27 @@ public class CheckoutPage extends BasePage {
     @FindBy (css = ".btn.btn-lg.btn-primary")
     WebElement continueButton;
 
+    @FindBy(id = "view_preview")
+    WebElement continueViewPreviewButton;
+
+    @FindBy(id = "place-order")
+    WebElement placeOrderButton;
+
+    @FindBy(css = ".sub-header:nth-child(2)")
+    WebElement shippingHeader;
+
+    @FindBy(css = "strong")
+    WebElement orderConfirmNumber;
+
+    public CheckoutPage(WebDriver driver) {
+        super(driver);
+    }
+
+    public CheckoutPage clickOnProceedToCheckout() {
+        click(proceedToCheckout);
+        return new CheckoutPage(driver);
+    }
+
     public CheckoutPage enterRequiredAddressFields(String fname, String lName, String firstAddress,
                                                    String userCity, String zipcode )  {
         type(firstName, fname);
@@ -62,26 +72,23 @@ public class CheckoutPage extends BasePage {
         return this;
     }
 
-    @FindBy(id = "view_preview")
-    WebElement continueViewPreviewButton;
-
     public CheckoutPage clickOnContinueButton() {
         click(continueViewPreviewButton);
         return this;
     }
-
-    @FindBy(id = "place-order")
-    WebElement placeOrderButton;
 
     public CheckoutPage clickOnPlaceOrderButton() {
         click(placeOrderButton);
         return this;
     }
 
-    @FindBy(css = ".sub-header:nth-child(2)")
-    WebElement shippingHeader;
-
     public String getShippingAddressText() {
         return shippingHeader.getText();
+    }
+
+    public CheckoutPage getOrderConfirmNumber() {
+        String text = orderConfirmNumber.getText();
+        System.out.println(text);
+        return this;
     }
 }

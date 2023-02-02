@@ -41,6 +41,15 @@ public class BasketPage extends BasePage{
     @FindBy(css = ".input-group-append")
     WebElement updateQuantity;
 
+    @FindBy(css = ".basket-items:nth-child(6) :nth-child(4)")
+    WebElement priceForOne;
+
+    @FindBy(css = ".basket-items:nth-child(6) :nth-child(5)")
+    WebElement priceForSeveral;
+
+    @FindBy(css = ".total .price_color")
+    WebElement priceTotal;
+
     public BasketPage(WebDriver driver) {
         super(driver);
     }
@@ -80,16 +89,44 @@ public class BasketPage extends BasePage{
     }
 
     public String getConfirmMessageBasketIsNowEmptyText() {
+        pause(2000);
         return isEmptyBasketMessageText.getText();
     }
 
     public String getConfirmBasketIsEmptyText() {
+        pause(2000);
         return emptyBasketText.getText();
     }
 
     public BasketPage enterQuantity(String n) {
         type(quantity, n);
         click(updateQuantity);
+        pause(2000);
         return this;
+    }
+
+    public void decreaseQuantity() {
+        driver.findElement(By.id("id_form-0-quantity")).sendKeys(Keys.ARROW_DOWN);
+    }
+
+    public double getPrice(WebElement element) {
+        double number = Double.parseDouble(element.getText().replace("£", ""));
+        return number;
+    }
+
+    public double getPriceForOneItem() {
+        double element = getPrice(priceForOne);
+        return element;
+    }
+
+    public double getPriceForSeveralItems() {
+        double element = getPrice(priceForSeveral);
+        return element;
+    }
+
+    public double getTotalPrice() {
+        double element = getPrice(priceTotal);
+        pause(5000);
+        return element;
     }
 }

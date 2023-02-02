@@ -7,7 +7,8 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class SidePanelPageLinksTests extends BaseTest{
+public class SidePanelPageLinksTests extends BaseTest {
+
     @BeforeMethod
     public void ensurePreconditions() {
         new HomePage(driver).clickOnLoginOrRegisterLink();
@@ -63,5 +64,4 @@ public class SidePanelPageLinksTests extends BaseTest{
         Assert.assertTrue(new BooksPage(driver).getItemTitleText().contains(PageTitleData.HACKING));
 
     }
-
 }

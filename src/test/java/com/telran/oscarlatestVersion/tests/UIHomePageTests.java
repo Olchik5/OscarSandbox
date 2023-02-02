@@ -95,7 +95,6 @@ public class UIHomePageTests extends BaseTest{
     @Test
     public void verifyProductGalleryElementsButtonAddToBasketTest() {
         Assert.assertTrue(new UIHomePage(driver).isButtonAddToBasketPresent());
-
     }
 
     @Test

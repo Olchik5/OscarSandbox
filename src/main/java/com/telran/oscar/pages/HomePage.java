@@ -1,14 +1,11 @@
 package com.telran.oscar.pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class HomePage extends BasePage {
-
-    public HomePage(WebDriver driver) {
-        super(driver);
-    }
 
     @FindBy(id = "login_link")
     WebElement LoginOrRegister;
@@ -30,6 +27,13 @@ public class HomePage extends BasePage {
 
     @FindBy(xpath = "//*[.='Welcome!']")
     WebElement oscarLogo;
+
+    @FindBy(xpath = "//*[@href='/en-gb/catalogue/']")
+    WebElement logoLV;
+
+    public HomePage(WebDriver driver) {
+        super(driver);
+    }
 
     public LoginOrRegisterPage clickOnLoginOrRegisterLink() {
         click(LoginOrRegister);
@@ -68,6 +72,15 @@ public class HomePage extends BasePage {
 
     public String getConfirmHomePageText() {
         return oscarLogo.getText();
+    }
 
+    public HomePage addItemToBasket(int number) {
+        driver.findElement(By.cssSelector(".col-sm-6:nth-child("+ number +") .btn")).click();
+        return this;
+    }
+
+    public HomePage clickOnLogoLV() {
+        click(logoLV);
+        return this;
     }
 }

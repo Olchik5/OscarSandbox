@@ -16,4 +16,6 @@ public class UserData {
     public static final String POST_CODE = "00120";
     public static final String COUNTRY = "Hoply See (Vatikan City State)";
 
+    public static final String NEW_PASSWORD = "Lu1234567!!";
+    public static final String PASSWORD_UPDATED = "Password updated";
 }

@@ -63,4 +63,46 @@ public class BasketPageTests extends BaseTest{
         new CheckoutPage(driver).clickOnProceedToCheckout();
         Assert.assertTrue(new CheckoutPage(driver).getShippingAddressText().contains(BasketData.SHIPPING));
     }
+
+    @Test
+    public void isUpdateQuantityWithSpinDecreaseButtonFunctioningTest(){
+        new AllProductsPage(driver).clickOnAddToBasketButton();
+        new BasketPage(driver).clickOnViewBasketLVButton();
+        new BasketPage(driver).decreaseQuantity();
+        Assert.assertTrue(new BasketPage(driver).getQuantityInBasketText().contains(BasketData.QUANTITY3_IN_BASKET));
+    }
+
+    @Test
+    public void compareItemWithTotalPriseTest() {
+        new HomePage(driver).addItemToBasket(BasketData.ADD_FIRST_ITEM);
+        new AllProductsPage(driver).clickOnViewBasketButton();
+        double price = new BasketPage(driver).getPriceForOneItem();
+        System.out.println("price " + price);
+        new BasketPage(driver).enterQuantity(BasketData.QUANTITY2_IN_BASKET);
+        double priceForSeveralItems = new BasketPage(driver).getPriceForSeveralItems();
+        System.out.println("priceForSeveral" + priceForSeveralItems);
+        double priceTotal = new BasketPage(driver).getTotalPrice();
+        System.out.println(priceTotal);
+        new HomePage(driver).takeScreenshotWithScrollDown();
+        Assert.assertEquals(priceForSeveralItems,price*2);
+        Assert.assertEquals(priceForSeveralItems,priceTotal);
+
+    }
+
+    @Test
+    public void buyBookTest() {
+        new HomePage(driver).clickOnAllProductsLink().clickOnAddToBasketButton();
+        new BasketPage(driver).clickOnViewBasketButton();
+        new CheckoutPage(driver).clickOnProceedToCheckout().enterRequiredAddressFields(UserData.FIRST_NAME, UserData.SECOND_NAME,
+                        UserData.ADDRESS, UserData.CITY, UserData.POST_CODE)
+                .clickOnContinueButton()
+                .clickOnPlaceOrderButton()
+                .getOrderConfirmNumber();
+        new HomePage(driver).clickOnLogoLV();
+        new ProfilePage(driver).clickOnAccountLink()
+                .clickOnOrderHistoryLink()
+                .getOrderNumber();
+        Assert.assertEquals(new CheckoutPage(driver).getOrderConfirmNumber(), new ProfilePage(driver).getOrderNumber());
+
+    }
 }
