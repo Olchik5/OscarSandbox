@@ -7,7 +7,7 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class SidePanelPageLinksTests extends BaseTest {
+public class SidePanelPageLinksTests extends TestBase {
 
     @BeforeMethod
     public void ensurePreconditions() {

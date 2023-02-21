@@ -49,7 +49,28 @@ public class ProfilePage extends BasePage{
     WebElement save;
 
     @FindBy(css = ".alertinner.wicon")
-    WebElement passwordUpdated;
+    WebElement textOfUpdate;
+
+    @FindBy(css = ".page-header")
+    WebElement editProfileText;
+
+    @FindBy(id = "id_first_name")
+    WebElement firstName;
+
+    @FindBy(id = "id_last_name")
+    WebElement lastName;
+
+    @FindBy(css = ".form-group>div:nth-child(1) a")
+    WebElement cancelButton;
+
+    @FindBy(css = ".nav-item:nth-child(3)")
+    WebElement addressBook;
+
+    @FindBy(css = ".btn.btn-primary")
+    WebElement addNewAddressButton;
+
+    @FindBy(xpath = "//a[text()='Profile']")
+    WebElement profileLink;
 
     public ProfilePage(WebDriver driver) {
         super(driver);
@@ -133,13 +154,42 @@ public class ProfilePage extends BasePage{
         return this;
     }
 
-    public ProfilePage saveNewPassword() {
+    public ProfilePage clickOnSaveButton() {
         click(save);
         return this;
     }
 
-    public String getPasswordUpdatedText() {
-        return passwordUpdated.getText();
+    public String getTextOfUpdate() {
+        return textOfUpdate.getText();
     }
 
+    public String getText() {
+        return editProfileText.getText();
+    }
+
+    public ProfilePage editFirstAndLastName(String fName, String sName) {
+        type(firstName, fName);
+        type(lastName, sName);
+        return this;
+    }
+
+    public ProfilePage clickOnCancelButton() {
+        click(cancelButton);
+        return this;
+    }
+
+    public ProfilePage clickOnAddressBookSidePanelLink() {
+        click(addressBook);
+        return this;
+    }
+
+    public ProfilePage clickOnAddANewAddressButton() {
+        click(addNewAddressButton);
+        return this;
+    }
+
+    public ProfilePage clickOnProfileLink() {
+        click(profileLink);
+        return this;
+    }
 }

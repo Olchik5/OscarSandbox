@@ -1,9 +1,12 @@
 package com.telran.oscar.pages;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.util.List;
 
 public class UIHomePage extends BasePage{
@@ -74,6 +77,11 @@ public class UIHomePage extends BasePage{
     @FindBy(css = ".btn-info:nth-child(4)")
     List<WebElement> checkoutNowButton;
 
+    @FindBy(tagName = "a")
+    List<WebElement> links;
+
+    @FindBy(tagName = "img")
+    List<WebElement> images;
 
     public UIHomePage(WebDriver driver) {
         super(driver);
@@ -167,4 +175,54 @@ public class UIHomePage extends BasePage{
         return isElementPresent(checkoutNowButton);
     }
 
+    public UIHomePage checkBrokenLinks() {
+        for (int i = 0; i < links.size(); i++) {
+            WebElement element = links.get(i);
+            String url = element.getAttribute("href");
+            verifyLinks(url);
+        }
+        return this;
+    }
+
+    private void verifyLinks(String linkUrl) {
+
+        try {
+            URL url = new URL(linkUrl);
+            HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
+            httpURLConnection.setConnectTimeout(5000);
+            httpURLConnection.connect();
+            if (httpURLConnection.getResponseCode() >= 400) {
+                httpURLConnection.getResponseMessage();
+            } else {
+                httpURLConnection.getResponseMessage();
+            }
+        } catch (Exception e) {
+            e.getMessage();
+        }
+    }
+
+    public UIHomePage checkBrokenImages() {
+
+        for (int i = 0; i < images.size(); i++) {
+            WebElement element = images.get(i);
+            String imageUrl = element.getAttribute("src");
+            System.out.println("URL " + (i + 1) + " is " + imageUrl);
+            verifyLinks(imageUrl);
+
+            //check to display image with JS executor
+            try {
+                boolean imageDisplayed = (Boolean) ((JavascriptExecutor) driver)
+                        .executeScript("return (typeof arguments[0].naturalWidth != undefined && arguments[0].naturalWidth < 200);", element );
+                if (imageDisplayed) {
+                    System.out.println("DISPLAY - OK");
+                    System.out.println("*****************");
+                } else {
+                    System.out.println("DISPLAY - BROKEN");
+                }
+            } catch (Exception e) {
+                System.out.println("Error occurred");
+            }
+        }
+        return this;
+    }
 }

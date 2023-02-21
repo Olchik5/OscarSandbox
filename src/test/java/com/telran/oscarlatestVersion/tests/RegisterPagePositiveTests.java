@@ -9,7 +9,7 @@ import com.telran.oscar.utils.DataProviders;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class RegisterPagePositiveTests extends BaseTest{
+public class RegisterPagePositiveTests extends TestBase {
 
     @BeforeMethod
     public void ensurePreconditions() {
@@ -30,7 +30,7 @@ public class RegisterPagePositiveTests extends BaseTest{
         new LoginOrRegisterPage(driver).register(email, password, confirmPassword);
         new ProfilePage(driver).deleteRegisterUsers(password);
         new HomePage(driver).verifyTextThanksForRegistering(ConfirmationData.CONFIRMATION_OF_REGISTER);
-
+        new HomePage(driver).verifyTextYourProfileHasBeenDeleted().contains(ConfirmationData.CONFIRMATION_OF_DELETED_PROFILE);
     }
 
 }

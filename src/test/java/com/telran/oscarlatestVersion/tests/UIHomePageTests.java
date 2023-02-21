@@ -5,7 +5,7 @@ import com.telran.oscar.pages.UIHomePage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class UIHomePageTests extends BaseTest{
+public class UIHomePageTests extends TestBase {
 
     @Test
     public void verifyTopPageChooseLanguageFieldTest() {
@@ -117,5 +117,15 @@ public class UIHomePageTests extends BaseTest{
     public  void verifyBodyCheckoutNowButtonTest() {
         new AllProductsPage(driver).clickOnAddToBasketButton();
         Assert.assertTrue(new UIHomePage(driver).isCheckoutNowButtonPresent());
+    }
+
+    @Test
+    public void checkBrokenLinksTest(){
+        new UIHomePage(driver).checkBrokenLinks();
+    }
+
+    @Test
+    public void checkBrokenImagesTest(){
+        new UIHomePage(driver).checkBrokenImages();
     }
 }

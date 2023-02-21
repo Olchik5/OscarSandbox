@@ -9,4 +9,6 @@ public class PageTitleData {
     public static final String PROGRAMMING = "programming";
     public static final String HACKING = "Hacking";
     public static final String LOGIN_OR_REGISTER = "Login or register";
+    public static final String EDIT_PROFILE = "Edit Profile";
+    public static final String PROFILE = "Profile";
 }

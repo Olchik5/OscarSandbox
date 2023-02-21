@@ -8,7 +8,7 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class BasketPageTests extends BaseTest{
+public class BasketPageTests extends TestBase {
 
     @BeforeMethod
     public void ensurePrecondition() {

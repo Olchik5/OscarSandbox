@@ -11,4 +11,5 @@ public class ConfirmationData {
     public static final String CONFIRMATION_OF_REVIEW = "Thank you for reviewing";
 
     public static final String CONFIRM_OF_EMPTY_BASKET = "Your basket is empty.";
+    public static final String CONFIRMATION_OF_DELETED_PROFILE = "Your profile has now been deleted.";
 }

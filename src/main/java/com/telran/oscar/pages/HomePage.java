@@ -31,6 +31,9 @@ public class HomePage extends BasePage {
     @FindBy(xpath = "//*[@href='/en-gb/catalogue/']")
     WebElement logoLV;
 
+    @FindBy(css = ".alertinner.wicon")
+    WebElement deletedProfile;
+
     public HomePage(WebDriver driver) {
         super(driver);
     }
@@ -82,5 +85,9 @@ public class HomePage extends BasePage {
     public HomePage clickOnLogoLV() {
         click(logoLV);
         return this;
+    }
+
+    public String verifyTextYourProfileHasBeenDeleted() {
+        return deletedProfile.getText();
     }
 }

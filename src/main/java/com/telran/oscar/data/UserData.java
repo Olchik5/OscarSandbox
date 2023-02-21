@@ -18,4 +18,7 @@ public class UserData {
 
     public static final String NEW_PASSWORD = "Lu1234567!!";
     public static final String PASSWORD_UPDATED = "Password updated";
+    public static final String PROFILE_UPDATED = "Profile updated";
+    public static final String NEW_EMAIL = "lu5@gmail.com";
+    public static final CharSequence ADDRESS_CREATED = "created";
 }

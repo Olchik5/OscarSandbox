@@ -116,6 +116,7 @@ public class BasketPage extends BasePage{
 
     public double getPriceForOneItem() {
         double element = getPrice(priceForOne);
+        pause(5000);
         return element;
     }
 
