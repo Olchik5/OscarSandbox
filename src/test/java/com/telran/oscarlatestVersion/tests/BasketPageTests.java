@@ -16,20 +16,20 @@ public class BasketPageTests extends TestBase {
         new LoginOrRegisterPage(driver).login(UserData.USER_EMAIL, UserData.USER_PASSWORD);
     }
 
-    @Test
+    @Test(priority = 1)
     public void isBasketEmptyTest(){
         new BasketPage(driver).clickOnViewBasketLVButton();
         Assert.assertTrue(new BasketPage(driver).getBasketIsEmptyText().contains(ConfirmationData.CONFIRM_OF_EMPTY_BASKET));
     }
 
-    @Test
+    @Test(priority = 2)
     public void addItemInBasketTest(){
         new AllProductsPage(driver).clickOnAddToBasketButton();
         new BasketPage(driver).clickOnViewBasketLVButton();
         Assert.assertTrue(new BasketPage(driver).getQuantityInBasketText().contains(BasketData.QUANTITY_IN_BASKET));
     }
 
-    @Test
+    @Test(priority = 3)
     public void isUpdateQuantityButtonFunctioningTest(){
         new AllProductsPage(driver).clickOnAddToBasketButton();
         new BasketPage(driver).clickOnViewBasketLVButton();
@@ -47,7 +47,7 @@ public class BasketPageTests extends TestBase {
         Assert.assertTrue(new BasketPage(driver).getQuantityInBasketText().contains(BasketData.QUANTITY2_IN_BASKET));
     }
 
-    @Test
+    @Test(priority = 4)
     public void removeQuantityButtonTest(){
         new AllProductsPage(driver).clickOnAddToBasketButton();
         new AllProductsPage(driver).clickOnViewBasketButton();
@@ -56,7 +56,7 @@ public class BasketPageTests extends TestBase {
         Assert.assertTrue(new BasketPage(driver).getConfirmBasketIsEmptyText().contains(ConfirmationData.CONFIRM_OF_EMPTY_BASKET));
     }
 
-    @Test
+    @Test(priority = 5)
     public void proceedToCheckoutButtonTest(){
         new AllProductsPage(driver).clickOnAddToBasketButton();
         new BasketPage(driver).clickOnViewBasketLVButton();
@@ -102,7 +102,7 @@ public class BasketPageTests extends TestBase {
         new ProfilePage(driver).clickOnAccountLink()
                 .clickOnOrderHistoryLink()
                 .getOrderNumber();
-        Assert.assertEquals(new CheckoutPage(driver).getOrderConfirmNumber(), new ProfilePage(driver).getOrderNumber());
-
+        CheckoutPage orderConfirmNumber = new CheckoutPage(driver);
+        Assert.assertEquals(orderConfirmNumber.getOrderConfirmNumber(), new ProfilePage(driver).getOrderNumber());
     }
 }

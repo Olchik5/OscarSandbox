@@ -6,7 +6,6 @@
 ###
 Oscar Sandbox is intended as a playground for experimenting with Oscar's features. Manual and automatic testing of the Oscar Sandbox website is my graduation project. As part of this project, I was able to use the acquired skills and some of the technologies studied during the education. During the work on the project, Smoky and regression testing were carried out, e2e tests were implemented.
 ###
-###
 ### As an independent work for automated testing of the site were used:
 - IntelliJ IDEA
 - Java version 11
@@ -40,8 +39,10 @@ localhost:8080
 - Jira
 
 #### You can read the test documentation in detail  [here](https://docs.google.com/spreadsheets/d/1FTwBr2ZMarSJlSf8UhqJepka_jUeK-pQryNizCQlGHg/edit?usp=sharing)
-
-#### A few of my bug reports in Jira are  [here](https://drive.google.com/drive/folders/1CIv4b7FW-4b0UjX_JjKgssr_S5CpCyMc?usp=share_link)
+###
+I checked the first version of the [Oscar](http://selenium1ру.pythonanywhere.com/en-gb/) website and found 12 bugs, then checked the second version of the site [Oscar](https://latest.oscarcommerce.com/en-gb/catalogue/), where 9 bugs were fixed, but found 5 more bugs.
+##### You can view my bug reports in Jira  [here](https://drive.google.com/drive/folders/1CIv4b7FW-4b0UjX_JjKgssr_S5CpCyMc?usp=share_link)
+####
 For screenshots and making video bug reports, I used:
 - PicPick
 - BandiCam

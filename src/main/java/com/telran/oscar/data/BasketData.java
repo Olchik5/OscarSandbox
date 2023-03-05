@@ -13,5 +13,5 @@ public class BasketData {
     public static final String CONFIRM1_OF_EMPTY_BASKET = "Your basket is now empty";
 
     public static final String SHIPPING = "Shipping address";
-    public static final int ADD_FIRST_ITEM = 2;
+    public static final int ADD_FIRST_ITEM = 1;
 }

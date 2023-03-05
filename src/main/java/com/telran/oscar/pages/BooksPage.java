@@ -13,7 +13,7 @@ public class BooksPage extends BasePage{
     WebElement nextButton;
 
     @FindBy(xpath = "//a[contains(text(),'previous')]")
-    WebElement previoustButton;
+    WebElement previousButton;
 
     @FindBy(css = ".page-header")
     WebElement books;
@@ -68,7 +68,7 @@ public class BooksPage extends BasePage{
     }
 
     public BooksPage clickOnPreviousButton() {
-        click(previoustButton);
+        click(previousButton);
         return this;
     }
 

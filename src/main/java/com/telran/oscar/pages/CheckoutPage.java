@@ -86,9 +86,9 @@ public class CheckoutPage extends BasePage {
         return shippingHeader.getText();
     }
 
-    public CheckoutPage getOrderConfirmNumber() {
+    public String getOrderConfirmNumber() {
         String text = orderConfirmNumber.getText();
         System.out.println(text);
-        return this;
+        return text;
     }
 }

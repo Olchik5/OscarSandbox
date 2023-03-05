@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Basket" verbose="1" >
+    <test name="Basket" >
+        <classes>
+            <class name="com.telran.oscarlatestVersion.tests.RegisterPagePositiveTests">
+                <methods>
+                    <exclude name=".*WithDataProvider.*"> </exclude>
+                </methods>
+            </class>
+            <class name="com.telran.oscarlatestVersion.tests.BasketPageTests">
+                <methods>
+                    <exclude name="buyBookTest"> </exclude>
+                    <exclude name="compareItemWithTotalPriseTest"> </exclude>
+                    <exclude name="isUpdateQuantityWithSpinButtonFunctioningTest"> </exclude>
+                    <exclude name="isUpdateQuantityWithSpinDecreaseButtonFunctioningTest"> </exclude>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

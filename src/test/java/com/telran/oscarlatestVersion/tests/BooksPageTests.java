@@ -41,8 +41,10 @@ public class BooksPageTests extends TestBase {
     public void addToBasketByBookTitleLink () {
         new BooksPage(driver).clickOnTitleBookLink().clickOnAddToBasketButtonByBookTitle();
         new BooksPage(driver).verifyTextAddedToBasket(ConfirmationData.CONFIRMATION_ADDED_TO_BASKET);
+        new ProfilePage(driver).deleteRegisterUser();
 
     }
+
     @Test
     public void writeBookReviewTest(){
         new BooksPage(driver).clickOnThePictureOfBook().clickOnWriteReviewButton()

@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="User" verbose="1" >
+    <test name="UserPositive" >
+        <classes>
+            <class name="com.telran.oscarlatestVersion.tests.RegisterPagePositiveTests">
+            <methods>
+                <exclude name=".*WithDataProvider.*"> </exclude>
+            </methods>
+            </class>
+
+            <class name="com.telran.oscarlatestVersion.tests.LoginPagePositiveTests" />
+
+            <class name="com.telran.oscarlatestVersion.tests.ProfilePageTests">
+                <methods>
+                    <exclude name="ensurePrecondition"> </exclude>
+                    <exclude name=".*Negative.*"> </exclude>
+                    <exclude name="editEmailProfilePositiveTest"> </exclude>
+                    <exclude name="changePasswordTest"> </exclude>
+                </methods>
+            </class>
+        </classes>
+
+    </test>
+</suite>

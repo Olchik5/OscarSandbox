@@ -132,10 +132,10 @@ public class ProfilePage extends BasePage{
         return this;
     }
 
-    public ProfilePage getOrderNumber() {
+    public String getOrderNumber() {
         String text = orderNumber.getText();
         System.out.println("Order number: " + text);
-        return this;
+        return text;
     }
 
     public ProfilePage clickOnChangePasswordButton() {
