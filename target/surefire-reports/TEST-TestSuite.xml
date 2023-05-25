@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="41.002" tests="6" errors="0" skipped="0" failures="3">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="surefire.suiteXmlFiles" value="src/test/resources/testngBasket.xml"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\49160\Tel-Ran\QA\GitHub2\OscarSandbox\target\test-classes;C:\Users\49160\Tel-Ran\QA\GitHub2\OscarSandbox\target\classes;C:\Users\49160\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\49160\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\49160\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\49160\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\49160\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\49160\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\49160\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\49160\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\49160\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\49160\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\49160\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\49160\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\49160\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\49160\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\49160\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\49160\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\49160\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\49160\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\49160\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\49160\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\49160\.m2\repository\org\testng\testng\7.1.0\testng-7.1.0.jar;C:\Users\49160\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\Users\49160\.m2\repository\com\google\inject\guice\4.1.0\guice-4.1.0-no_aop.jar;C:\Users\49160\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\49160\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\49160\.m2\repository\org\yaml\snakeyaml\1.21\snakeyaml-1.21.jar;C:\Users\49160\.m2\repository\ch\qos\logback\logback-classic\1.2.11\logback-classic-1.2.11.jar;C:\Users\49160\.m2\repository\ch\qos\logback\logback-core\1.2.11\logback-core-1.2.11.jar;C:\Users\49160\.m2\repository\org\slf4j\slf4j-api\1.7.32\slf4j-api-1.7.32.jar;C:\Users\49160\.m2\repository\ru\yandex\qatools\ashot\ashot\1.5.4\ashot-1.5.4.jar;C:\Users\49160\.m2\repository\commons-io\commons-io\2.5\commons-io-2.5.jar;C:\Users\49160\.m2\repository\com\google\code\gson\gson\2.6.2\gson-2.6.2.jar;C:\Users\49160\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\49160\.m2\repository\org\apache\maven\surefire\surefire-testng-utils\2.21.0\surefire-testng-utils-2.21.0.jar;C:\Users\49160\.m2\repository\org\apache\maven\surefire\surefire-grouper\2.21.0\surefire-grouper-2.21.0.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="application.properties" value="/application.properties"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-11.0.14.9-hotspot\bin"/>
+    <property name="sun.java.command" value="C:\Users\49160\AppData\Local\Temp\surefire17257208209912065253\surefirebooter14464569041127597866.jar C:\Users\49160\AppData\Local\Temp\surefire17257208209912065253 2023-03-05T22-16-43_034-jvmRun1 surefire12635063593686740330tmp surefire_06251966376654929380tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\49160\Tel-Ran\QA\GitHub2\OscarSandbox\target\test-classes;C:\Users\49160\Tel-Ran\QA\GitHub2\OscarSandbox\target\classes;C:\Users\49160\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\49160\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\49160\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\49160\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\49160\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\49160\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\49160\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\49160\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\49160\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\49160\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\49160\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\49160\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\49160\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\49160\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\49160\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\49160\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\49160\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\49160\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\49160\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\49160\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\49160\.m2\repository\org\testng\testng\7.1.0\testng-7.1.0.jar;C:\Users\49160\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\Users\49160\.m2\repository\com\google\inject\guice\4.1.0\guice-4.1.0-no_aop.jar;C:\Users\49160\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\49160\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\49160\.m2\repository\org\yaml\snakeyaml\1.21\snakeyaml-1.21.jar;C:\Users\49160\.m2\repository\ch\qos\logback\logback-classic\1.2.11\logback-classic-1.2.11.jar;C:\Users\49160\.m2\repository\ch\qos\logback\logback-core\1.2.11\logback-core-1.2.11.jar;C:\Users\49160\.m2\repository\org\slf4j\slf4j-api\1.7.32\slf4j-api-1.7.32.jar;C:\Users\49160\.m2\repository\ru\yandex\qatools\ashot\ashot\1.5.4\ashot-1.5.4.jar;C:\Users\49160\.m2\repository\commons-io\commons-io\2.5\commons-io-2.5.jar;C:\Users\49160\.m2\repository\com\google\code\gson\gson\2.6.2\gson-2.6.2.jar;C:\Users\49160\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\49160\.m2\repository\org\apache\maven\surefire\surefire-testng-utils\2.21.0\surefire-testng-utils-2.21.0.jar;C:\Users\49160\.m2\repository\org\apache\maven\surefire\surefire-grouper\2.21.0\surefire-grouper-2.21.0.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\49160"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2022-01-18"/>
+    <property name="java.home" value="C:\Program Files\Eclipse Adoptium\jdk-11.0.14.9-hotspot"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\49160\Tel-Ran\QA\GitHub2\OscarSandbox"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\49160\AppData\Local\Temp\surefire17257208209912065253\surefirebooter14464569041127597866.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.14+9"/>
+    <property name="user.name" value="49160"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-11.0.14+9"/>
+    <property name="localRepository" value="C:\Users\49160\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\49160\AppData\Local\Temp\"/>
+    <property name="java.version" value="11.0.14"/>
+    <property name="user.dir" value="C:\Users\49160\Tel-Ran\QA\GitHub2\OscarSandbox"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-11.0.14.9-hotspot\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Eclipse Adoptium\jdk-11.0.14.9-hotspot\bin;C:\Tools\;C:\Tools\apache-maven-3.8.6\bin;C:\Users\49160\AppData\Local\Android\Sdk\emulator;C:\Program Files\Eclipse Adoptium\jdk-11.0.14.9-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Tools\gradle-7.4.2\bin;C:\Users\49160\AppData\Local\Android\Sdk\tools;C:\Users\49160\AppData\Local\Android\Sdk\platform-tools;C:\Users\49160\AppData\Local\Android\Sdk\tools\bin;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Git\cmd;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\49160\AppData\Local\Microsoft\WindowsApps;C:\Users\49160\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.3.1\bin;C:\Users\49160\AppData\Local\Programs\Fiddler;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="11.0.14+9"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="registerPositiveTest" classname="com.telran.oscarlatestVersion.tests.RegisterPagePositiveTests" time="8.687">
+    <failure message="Cannot locate an element using css selector=.alertinner.wicon&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;LAPTOP-ES9UA65O&apos;, ip: &apos;192.168.2.32&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+Cannot locate an element using css selector=.alertinner.wicon
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-ES9UA65O', ip: '192.168.2.32', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
+Driver info: driver.version: RemoteWebDriver
+	at com.telran.oscarlatestVersion.tests.RegisterPagePositiveTests.registerPositiveTest(RegisterPagePositiveTests.java:25)
+</failure>
+    <system-out><![CDATA[22:16:43,909 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+22:16:43,909 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [file:/C:/Users/49160/Tel-Ran/QA/GitHub2/OscarSandbox/target/test-classes/logback.xml]
+22:16:43,940 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+22:16:43,940 |-INFO in ch.qos.logback.core.joran.action.TimestampAction - Using current interpretation time, i.e. now, as time reference.
+22:16:43,956 |-INFO in ch.qos.logback.core.joran.action.TimestampAction - Adding property to the context with key="bySecond" and value="20230305T221643" to the LOCAL scope
+22:16:43,956 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+22:16:43,956 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [STDOUT]
+22:16:43,972 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+22:16:43,987 |-ERROR in ch.qos.logback.core.pattern.parser.Compiler@742ff096 - There is no conversion class registered for conversion word [kvp]
+22:16:43,987 |-ERROR in ch.qos.logback.core.pattern.parser.Compiler@742ff096 - [kvp] is not a valid conversion word
+22:16:43,987 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.FileAppender]
+22:16:43,987 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [FILE]
+22:16:43,987 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+22:16:43,987 |-INFO in ch.qos.logback.core.FileAppender[FILE] - File property is set to [src/test_logs/log_20230305T221643.log]
+22:16:44,003 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to DEBUG
+22:16:44,003 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[ROOT]
+22:16:44,003 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [FILE] to Logger[ROOT]
+22:16:44,003 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+22:16:44,003 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@75437611 - Registering current configuration as safe fallback point
+
+22:16:46.626 [main] INFO  c.t.o.tests.TestBase -%PARSER_ERROR[kvp]- Test start registerPositiveTest with data: []
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 109.0.5414.74 (e7c5703604daa9cc128ccf5a5d3e993513758913-refs/branch-heads/5414@{#1172}) on port 16594
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1678051005.159][WARNING]: This version of ChromeDriver has not been tested with Chrome version 110.
+Mar 05, 2023 10:16:45 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="isBasketEmptyTest" classname="com.telran.oscarlatestVersion.tests.BasketPageTests" time="0.422">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at com.telran.oscarlatestVersion.tests.BasketPageTests.isBasketEmptyTest(BasketPageTests.java:22)
+</failure>
+    <system-out><![CDATA[22:16:55.596 [main] INFO  c.t.o.tests.TestBase -%PARSER_ERROR[kvp]- FAILED: Test method registerPositiveTest
+22:16:57.251 [main] INFO  c.t.o.tests.TestBase -%PARSER_ERROR[kvp]- Test start isBasketEmptyTest with data: []
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 109.0.5414.74 (e7c5703604daa9cc128ccf5a5d3e993513758913-refs/branch-heads/5414@{#1172}) on port 43779
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1678051016.254][WARNING]: This version of ChromeDriver has not been tested with Chrome version 110.
+Mar 05, 2023 10:16:56 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="addItemInBasketTest" classname="com.telran.oscarlatestVersion.tests.BasketPageTests" time="0.841">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at com.telran.oscarlatestVersion.tests.BasketPageTests.addItemInBasketTest(BasketPageTests.java:29)
+</failure>
+    <system-out><![CDATA[22:16:59.116 [main] INFO  c.t.o.tests.TestBase -%PARSER_ERROR[kvp]- FAILED: Test method isBasketEmptyTest
+22:17:00.629 [main] INFO  c.t.o.tests.TestBase -%PARSER_ERROR[kvp]- Test start addItemInBasketTest with data: []
+3
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 109.0.5414.74 (e7c5703604daa9cc128ccf5a5d3e993513758913-refs/branch-heads/5414@{#1172}) on port 12420
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1678051019.701][WARNING]: This version of ChromeDriver has not been tested with Chrome version 110.
+Mar 05, 2023 10:16:59 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="isUpdateQuantityButtonFunctioningTest" classname="com.telran.oscarlatestVersion.tests.BasketPageTests" time="3.285"/>
+  <testcase name="removeQuantityButtonTest" classname="com.telran.oscarlatestVersion.tests.BasketPageTests" time="4.981"/>
+  <testcase name="proceedToCheckoutButtonTest" classname="com.telran.oscarlatestVersion.tests.BasketPageTests" time="1.336"/>
+</testsuite>

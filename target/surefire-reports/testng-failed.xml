@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Basket]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="Basket(failed)" verbose="0">
+    <classes>
+      <class name="com.telran.oscarlatestVersion.tests.BasketPageTests">
+        <methods>
+          <include name="init"/>
+          <include name="startTest"/>
+          <include name="stopTest"/>
+          <include name="addItemInBasketTest"/>
+          <include name="isBasketEmptyTest"/>
+          <include name="ensurePrecondition"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.telran.oscarlatestVersion.tests.BasketPageTests -->
+      <class name="com.telran.oscarlatestVersion.tests.RegisterPagePositiveTests">
+        <methods>
+          <include name="init"/>
+          <include name="startTest"/>
+          <include name="stopTest"/>
+          <include name="registerPositiveTest"/>
+          <include name="tearDown"/>
+          <include name="ensurePreconditions"/>
+        </methods>
+      </class> <!-- com.telran.oscarlatestVersion.tests.RegisterPagePositiveTests -->
+    </classes>
+  </test> <!-- Basket(failed) -->
+</suite> <!-- Failed suite [Basket] -->

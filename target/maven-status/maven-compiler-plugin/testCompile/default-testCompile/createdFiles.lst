@@ -1,0 +1,15 @@
+com\telran\oscar\tests\LoginOrRegisterPageNegativeTests.class
+com\telran\oscarlatestVersion\tests\LoginOrRegisterPageNegativeTests.class
+com\telran\oscarlatestVersion\tests\RegisterPagePositiveTests.class
+com\telran\oscar\tests\AddBookTest.class
+com\telran\oscarlatestVersion\tests\BooksPageTests.class
+com\telran\oscar\tests\HomePageTest.class
+com\telran\oscarlatestVersion\tests\HomePageTests.class
+com\telran\oscar\tests\LoginOrRegisterPagePositiveTests.class
+com\telran\oscarlatestVersion\tests\BasketPageTests.class
+com\telran\oscarlatestVersion\tests\TestBase.class
+com\telran\oscarlatestVersion\tests\ProfilePageTests.class
+com\telran\oscarlatestVersion\tests\UIHomePageTests.class
+com\telran\oscar\tests\TestBase.class
+com\telran\oscarlatestVersion\tests\SidePanelPageLinksTests.class
+com\telran\oscarlatestVersion\tests\LoginPagePositiveTests.class

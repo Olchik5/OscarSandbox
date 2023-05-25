@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Product" verbose="1" >
+    <test name="ProductPos" >
+        <classes>
+            <class name="com.telran.oscarlatestVersion.tests.RegisterPagePositiveTests">
+                <methods>
+                    <exclude name=".*WithDataProvider.*"> </exclude>
+                </methods>
+            </class>
+            <class name="com.telran.oscarlatestVersion.tests.BooksPageTests">
+                <methods>
+                    <exclude name="writeBookReviewTest">
+                    </exclude>
+                    <exclude name="nextNavigationTest">
+                    </exclude>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
