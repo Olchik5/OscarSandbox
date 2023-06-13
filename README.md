@@ -21,7 +21,7 @@ Oscar Sandbox is intended as a playground for experimenting with Oscar's feature
 <p align="left"> <a href="https://www.java.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/> </a> <a href="https://www.jenkins.io" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/jenkins/jenkins-icon.svg" alt="jenkins" width="40" height="40"/> </a> <a href="https://www.selenium.dev" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/detain/svg-logos/780f25886640cef088af994181646db2f6b1a3f8/svg/selenium-logo.svg" alt="selenium" width="40" height="40"/> </a> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a> <a href="https://www.selenium.dev" target="_blank" rel="noreferrer"> </p>
 
 To launch a project via IntelliJ IDEA, as well as via the command line and Jenkins, you will find all the necessary dependencies and builds in
-[pom.xml](https://github.com/openkina/OscarSandbox/blob/main/pom.xml)
+[pom.xml](https://github.com/Olchik5/OscarSandbox/blob/main/pom.xml)
 
 ##### Run tests via the command line use the command:
 ```bash
