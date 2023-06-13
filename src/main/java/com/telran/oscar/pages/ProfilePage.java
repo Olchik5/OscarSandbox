@@ -30,7 +30,8 @@ public class ProfilePage extends BasePage{
 
     //@FindBy(css = "td:nth-child(1)")
     //@FindBy(css = ".table.table-striped.table-bordered tr:nth-child(2) td:nth-child(1)")
-    @FindBy(css = "td > a")
+    //@FindBy(css = "td > a")
+    @FindBy(xpath = "//tbody/tr[2]/td[1]/a[1]")
     WebElement orderNumber;
 
     @FindBy(xpath = "//a[@href='/en-gb/accounts/change-password/']")
@@ -134,7 +135,7 @@ public class ProfilePage extends BasePage{
 
     public String getOrderNumber() {
         String text = orderNumber.getText();
-        System.out.println("Order number: " + text);
+        System.out.println(text);
         return text;
     }
 

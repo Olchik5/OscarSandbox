@@ -93,16 +93,17 @@ public class BasketPageTests extends TestBase {
     public void buyBookTest() {
         new HomePage(driver).clickOnAllProductsLink().clickOnAddToBasketButton();
         new BasketPage(driver).clickOnViewBasketButton();
-        new CheckoutPage(driver).clickOnProceedToCheckout().enterRequiredAddressFields(UserData.FIRST_NAME, UserData.SECOND_NAME,
+        String actual = new CheckoutPage(driver).clickOnProceedToCheckout()
+                .enterRequiredAddressFields(UserData.FIRST_NAME, UserData.SECOND_NAME,
                         UserData.ADDRESS, UserData.CITY, UserData.POST_CODE)
                 .clickOnContinueButton()
                 .clickOnPlaceOrderButton()
                 .getOrderConfirmNumber();
         new HomePage(driver).clickOnLogoLV();
-        new ProfilePage(driver).clickOnAccountLink()
+        String expected = new ProfilePage(driver).clickOnAccountLink()
                 .clickOnOrderHistoryLink()
                 .getOrderNumber();
-        CheckoutPage orderConfirmNumber = new CheckoutPage(driver);
-        Assert.assertEquals(orderConfirmNumber.getOrderConfirmNumber(), new ProfilePage(driver).getOrderNumber());
+        Assert.assertEquals(actual,expected);
+
     }
 }

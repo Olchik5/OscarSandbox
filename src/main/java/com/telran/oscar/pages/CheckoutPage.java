@@ -41,7 +41,7 @@ public class CheckoutPage extends BasePage {
     @FindBy(css = ".sub-header:nth-child(2)")
     WebElement shippingHeader;
 
-    @FindBy(css = "strong")
+    @FindBy(xpath = "//p//strong")
     WebElement orderConfirmNumber;
 
     public CheckoutPage(WebDriver driver) {
